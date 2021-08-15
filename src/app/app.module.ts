@@ -4,11 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ErrorMsgComponent } from './compatilhado/error-msg/error-msg.component';
+import { ListaLembreteComponent } from './paginas/lista-lembrete/lista-lembrete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorMsgComponent
+    ErrorMsgComponent,
+    ListaLembreteComponent
   ],
   imports: [
     BrowserModule,
