@@ -25,6 +25,13 @@ export class ListaLembreteComponent implements OnInit {
     }, () => { this.errorMsgComponent.setError('Falha ao buscar lembretes.'); });
   }
 
+  deletaLembrete(id: number){
+    this.lembreteService.deletaLembrete(id)
+      .subscribe(()=> {
+        this.getListaLembretes();
+      }, ()=> { this.errorMsgComponent.setError('Falha ao deletar lembrete.'); });
+  }
+
   existemLembretes(): boolean {
     return this.lembretes && this.lembretes.length > 0;
   }
