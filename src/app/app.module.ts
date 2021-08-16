@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ErrorMsgComponent } from './compatilhado/error-msg/error-msg.component';
 import { ListaLembreteComponent } from './paginas/lista-lembrete/lista-lembrete.component';
+import { FormLembreteComponent } from './compartilhado/form-lembrete/form-lembrete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorMsgComponent,
-    ListaLembreteComponent
+    ListaLembreteComponent,
+    FormLembreteComponent
   ],
   imports: [
     BrowserModule,
