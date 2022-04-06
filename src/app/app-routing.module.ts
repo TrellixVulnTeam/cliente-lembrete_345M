@@ -5,10 +5,10 @@ import { CriarLembreteComponent } from './paginas/criar-lembrete/criar-lembrete.
 import { EditarLembreteComponent } from './paginas/editar-lembrete/editar-lembrete.component';
 
 const routes: Routes = [
-  { path: '', component: ListaLembreteComponent},
-  { path: 'lembrete/criar', component: CriarLembreteComponent},
-  { path: 'lembrete/editar/:id', component: EditarLembreteComponent},
-  { path: '**', redirectTo: ''}
+  {path: '', component: ListaLembreteComponent},
+  {path: 'lembrete/criar', component: CriarLembreteComponent},
+  {path: 'lembrete/editar/:id', component: EditarLembreteComponent},
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
